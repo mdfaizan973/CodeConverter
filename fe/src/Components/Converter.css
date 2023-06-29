@@ -55,7 +55,10 @@ button:hover {
 .output {
   background-color: #f5f5f5;
   padding: 10px;
-  border: 1px solid #ccc;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  border: 2px solid grey;
+}
+#convertedCode {
+  font-family: "Courier New", Courier, monospace;
 }
