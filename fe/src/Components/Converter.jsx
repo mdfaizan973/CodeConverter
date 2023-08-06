@@ -109,9 +109,9 @@ export default function Converter() {
               <option value="c#">C#</option>
               <option value="java">Java</option>
               <option value="python">Python</option>
-              <option value="python">Rust</option>
-              <option value="python">Php</option>
-              <option value="python">Ruby</option>
+              <option value="rust">Rust</option>
+              <option value="php">Php</option>
+              <option value="ruby">Ruby</option>
               <option value="javascript">JavaScript</option>
               <option value="typescript">TypeScript</option>
             </Select>

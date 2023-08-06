@@ -1,7 +1,10 @@
 import React from "react";
 import { Box, Flex, Spacer, Button, Link } from "@chakra-ui/react";
 
+import { useColorMode } from "@chakra-ui/react";
+import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 export default function Navbar() {
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
     <Box
       position={"fixed"}
@@ -19,10 +22,14 @@ export default function Navbar() {
         </Link>
         <Spacer />
         <Link href="#converter_ui">
-          <Button colorScheme="teal" size="md">
+          <Button colorScheme="blue" size="md">
             Get Started
           </Button>
         </Link>
+
+        <Button onClick={toggleColorMode} ml={"5px"} width="20px">
+          {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+        </Button>
       </Flex>
     </Box>
   );
