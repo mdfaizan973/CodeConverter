@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 450px) and (min-width: 100px) {
   #main_container {
-    max-width: 100%;
+    max-width: 95%;
     height: 100%;
   }
 }
