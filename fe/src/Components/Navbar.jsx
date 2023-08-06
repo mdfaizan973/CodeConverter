@@ -18,10 +18,11 @@ export default function Navbar() {
           Code Converter
         </Link>
         <Spacer />
-
-        <Button colorScheme="teal" size="md">
-          Get Started
-        </Button>
+        <Link href="#converter_ui">
+          <Button colorScheme="teal" size="md">
+            Get Started
+          </Button>
+        </Link>
       </Flex>
     </Box>
   );

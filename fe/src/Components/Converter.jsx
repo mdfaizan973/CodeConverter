@@ -86,50 +86,11 @@ export default function Converter() {
   };
 
   return (
-    // <div>
-    //   <div className="container">
-    //     <h1>Code Converter</h1>
-    //     <div className="form">
-    //       <textarea
-    //         onChange={(e) => setTextArea(e.target.value)}
-    //         id="codeInput"
-    //         placeholder="Enter your code here"
-    //       ></textarea>
-    //       <select
-    //         id="languageSelect"
-    //         onChange={(e) => setlanguage(e.target.value)}
-    //       >
-    //         <option value="c++">C++</option>
-    //         <option value="c#">C#</option>
-    //         <option value="java">Java</option>
-    //         <option value="python">Python</option>
-    //         <option value="javascript">JavaScript</option>
-    //         <option value="typescript">TypeScript</option>
-    //       </select>
-    //       <div className="buttons">
-    //         <button id="convertButton" onClick={handleconvert}>
-    //           Convert
-    //         </button>
-    //         <button id="clearButton" onClick={handledebug}>
-    //           Debug
-    //         </button>
-    //         <button id="copyButton" onClick={handlecheckqty}>
-    //           {" "}
-    //           Check Quality
-    //         </button>
-    //       </div>
-    //     </div>
-    //     <div id="output" className="output">
-    //       {loading ? <h3>Loading.....</h3> : <h4 id="convertedCode">{data}</h4>}
-    //     </div>
-    //   </div>
-    // </div>
-
     <div id="converter_ui">
       <div id="main_container">
         <Container maxW="lg" py={10}>
           <VStack spacing={6} align="center">
-            <Heading size="xl">Code Converter</Heading>
+            <Heading size="xl">PUT YOUR CODE</Heading>
             <Box w="full">
               <Textarea
                 value={textarea}
@@ -183,3 +144,41 @@ export default function Converter() {
     </div>
   );
 }
+// <div>
+//   <div className="container">
+//     <h1>Code Converter</h1>
+//     <div className="form">
+//       <textarea
+//         onChange={(e) => setTextArea(e.target.value)}
+//         id="codeInput"
+//         placeholder="Enter your code here"
+//       ></textarea>
+//       <select
+//         id="languageSelect"
+//         onChange={(e) => setlanguage(e.target.value)}
+//       >
+//         <option value="c++">C++</option>
+//         <option value="c#">C#</option>
+//         <option value="java">Java</option>
+//         <option value="python">Python</option>
+//         <option value="javascript">JavaScript</option>
+//         <option value="typescript">TypeScript</option>
+//       </select>
+//       <div className="buttons">
+//         <button id="convertButton" onClick={handleconvert}>
+//           Convert
+//         </button>
+//         <button id="clearButton" onClick={handledebug}>
+//           Debug
+//         </button>
+//         <button id="copyButton" onClick={handlecheckqty}>
+//           {" "}
+//           Check Quality
+//         </button>
+//       </div>
+//     </div>
+//     <div id="output" className="output">
+//       {loading ? <h3>Loading.....</h3> : <h4 id="convertedCode">{data}</h4>}
+//     </div>
+//   </div>
+// </div>

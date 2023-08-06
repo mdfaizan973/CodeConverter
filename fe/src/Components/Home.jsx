@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.css";
+import { Link } from "@chakra-ui/react";
 
 export default function Home() {
   return (
@@ -13,7 +14,9 @@ export default function Home() {
             Elevate your coding experience with versatile tools, all in one
             place.
           </div>
-          <button class="button">Get Started</button>
+          <Link href="#converter_ui">
+            <button class="button">Get Started</button>
+          </Link>
         </div>
         <div class="right-section">
           <img
