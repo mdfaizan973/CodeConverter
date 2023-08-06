@@ -1,10 +1,11 @@
-body {
+#converter_ui {
   font-family: "Courier New", Courier, monospace !important;
   background-image: url(https://i.pinimg.com/564x/0c/85/a6/0c85a6aa97998da46e020feb8f744a6a.jpg) !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   color: black !important;
   font-weight: 800 !important;
+  height: 100vh;
 }
 
 ::placeholder {
@@ -20,7 +21,6 @@ body {
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 20px;
-  margin-top: 50px;
 }
 
 @media screen and (max-width: 450px) and (min-width: 100px) {

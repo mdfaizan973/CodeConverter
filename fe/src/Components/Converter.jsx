@@ -124,59 +124,62 @@ export default function Converter() {
     //     </div>
     //   </div>
     // </div>
-    <div id="main_container">
-      <Container maxW="lg" py={10}>
-        <VStack spacing={6} align="center">
-          <Heading size="xl">Code Converter</Heading>
-          <Box w="full">
-            <Textarea
-              value={textarea}
-              onChange={(e) => setTextArea(e.target.value)}
-              placeholder="Enter your code here"
-              size="md"
-            />
-          </Box>
-          <Select
-            value={language}
-            onChange={(e) => setlanguage(e.target.value)}
-            placeholder="Select a language"
-            size="md"
-          >
-            <option value="c++">C++</option>
-            <option value="c#">C#</option>
-            <option value="java">Java</option>
-            <option value="python">Python</option>
-            <option value="python">Rust</option>
-            <option value="python">Php</option>
-            <option value="python">Ruby</option>
-            <option value="javascript">JavaScript</option>
-            <option value="typescript">TypeScript</option>
-          </Select>
-          <VStack spacing={4}>
-            <Button colorScheme="blue" onClick={handleconvert}>
-              Convert
-            </Button>
-            <Button colorScheme="red" onClick={handledebug}>
-              Debug
-            </Button>
-            <Button colorScheme="green" onClick={handlecheckqty}>
-              Check Quality
-            </Button>
-          </VStack>
-          <Divider />
-          <Box w="full">
-            <Box p={4} border="1px solid gray" borderRadius="md">
-              {loading ? (
-                <CircularProgress isIndeterminate color="blue.500" />
-              ) : (
-                <chakra.h4 whiteSpace="pre-line" fontSize="md">
-                  {data}
-                </chakra.h4>
-              )}
+
+    <div id="converter_ui">
+      <div id="main_container">
+        <Container maxW="lg" py={10}>
+          <VStack spacing={6} align="center">
+            <Heading size="xl">Code Converter</Heading>
+            <Box w="full">
+              <Textarea
+                value={textarea}
+                onChange={(e) => setTextArea(e.target.value)}
+                placeholder="Enter your code here"
+                size="md"
+              />
             </Box>
-          </Box>
-        </VStack>
-      </Container>
+            <Select
+              value={language}
+              onChange={(e) => setlanguage(e.target.value)}
+              placeholder="Select a language"
+              size="md"
+            >
+              <option value="c++">C++</option>
+              <option value="c#">C#</option>
+              <option value="java">Java</option>
+              <option value="python">Python</option>
+              <option value="python">Rust</option>
+              <option value="python">Php</option>
+              <option value="python">Ruby</option>
+              <option value="javascript">JavaScript</option>
+              <option value="typescript">TypeScript</option>
+            </Select>
+            <VStack spacing={4}>
+              <Button colorScheme="blue" onClick={handleconvert}>
+                Convert
+              </Button>
+              <Button colorScheme="red" onClick={handledebug}>
+                Debug
+              </Button>
+              <Button colorScheme="green" onClick={handlecheckqty}>
+                Check Quality
+              </Button>
+            </VStack>
+            <Divider />
+            <Box w="full">
+              <Box p={4} border="1px solid gray" borderRadius="md">
+                {loading ? (
+                  <CircularProgress isIndeterminate color="blue.500" />
+                ) : (
+                  <chakra.h4 whiteSpace="pre-line" fontSize="md">
+                    {data}
+                  </chakra.h4>
+                )}
+              </Box>
+            </Box>
+          </VStack>
+        </Container>
+      </div>
     </div>
   );
 }
