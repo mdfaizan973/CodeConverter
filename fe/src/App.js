@@ -17,7 +17,7 @@ function App() {
       />
       <Converter />
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
