@@ -105,8 +105,10 @@ export default function Converter() {
               placeholder="Select a language"
               size="md"
             >
+              <option value="c">C</option>
               <option value="c++">C++</option>
               <option value="c#">C#</option>
+              <option value="kotlin">Kotlin</option>
               <option value="java">Java</option>
               <option value="python">Python</option>
               <option value="rust">Rust</option>
