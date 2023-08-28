@@ -9,10 +9,15 @@
   margin: 0 auto;
   max-width: 50%;
   padding: 40px 20px;
+  /* background-image: url(https://user-images.githubusercontent.com/106812942/263622754-10e08c1e-e679-4b55-bec4-2d43acad1af0.png);
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; */
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 20px;
+  /* color: white; */
 }
 
 @media screen and (max-width: 450px) and (min-width: 100px) {
