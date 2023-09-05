@@ -1,6 +1,6 @@
 #converter_ui {
   font-family: "Courier New", Courier, monospace !important;
-  height: 100vh;
+  height: 100%;
   padding: 100px 0;
 }
 
@@ -18,6 +18,33 @@
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 20px;
   /* color: white; */
+}
+
+.swing:hover {
+  animation-name: swing;
+  -webkit-animation-name: swing;
+  -moz-animation-name: swing;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
 }
 
 @media screen and (max-width: 450px) and (min-width: 100px) {

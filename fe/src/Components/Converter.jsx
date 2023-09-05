@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Converter.css";
-import axios from "axios";
 import {
   Box,
   Button,
@@ -118,13 +117,21 @@ export default function Converter() {
               <option value="typescript">TypeScript</option>
             </Select>
             <VStack spacing={4}>
-              <Button colorScheme="blue" onClick={handleconvert}>
+              <Button
+                className="swing"
+                colorScheme="blue"
+                onClick={handleconvert}
+              >
                 Convert
               </Button>
-              <Button colorScheme="red" onClick={handledebug}>
+              <Button className="swing" colorScheme="red" onClick={handledebug}>
                 Debug
               </Button>
-              <Button colorScheme="green" onClick={handlecheckqty}>
+              <Button
+                className="swing"
+                colorScheme="green"
+                onClick={handlecheckqty}
+              >
                 Check Quality
               </Button>
             </VStack>
